@@ -3,34 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./index.css" />
+    <link href="./css/index.css" rel="stylesheet" type="text/css" />
     <title>Restaurant Menu</title>
   </head>
   <body>
     <header>
+      <h1 class="head-welcome">Welcome to our menu!</h1>
       <nav>
-        <ul>
+        <ul class="nav-list">
           <li>
-            <a href="">Home</a>
+            Home
           </li>
           <li>
-            <a href="">About</a>
+            About
           </li>
           <li>
-            <a href="">Reviews</a>
+            Reviews
           </li>
         </ul>
       </nav>
     </header>
-    <nav>This is the sidebar!</nav>
+    <div>This is the sidebar!</div>
     <main>
-      <h1>Welcome to our menu!</h1>
       <table>
         <thead>
           <tr>
-            <th>Food</th>
-            <th>Description</th>
-            <th>Price</th>
+            <th class="heading">Food</th>
+            <th class="heading">Description</th>
+            <th class="heading">Price</th>
           </tr>
         </thead>
         <tbody>
@@ -69,27 +69,28 @@
       <form>
         <fieldset>
           <legend>Leave us a comment</legend>
+          <span>We won't share this information</span>
           <div>
             <label for="first">
               First name:
             </label>
-            <input type="text" id="first" />
+            <input type="text" class="formElement" id="first" />
           </div>
           <div>
             <label for="last">Last name:</label>
-            <input type="text" id="last" />
+            <input type="text" class="formElement" id="last" />
           </div>
           <div>
             <label for="email">
               Email:
             </label>
-            <input type="email" id="email" />
+            <input type="email" class="formElement" id="email" />
           </div>
           <div>
             <label for="phone">
               Phone Number:
             </label>
-            <input type="tel" id="phone" />
+            <input type="tel" class="formElement" id="phone" />
           </div>
           <div>
             <label for="rate">
@@ -97,7 +98,7 @@
             </label>
           </div>
           <div>
-            <select name="number" id="rate">
+            <select name="number" class="formElement" id="rate">
               <option value="1">Very Good</option>
               <option value="2">Good</option>
               <option value="3">Neutral</option>
@@ -109,21 +110,37 @@
             <label for="comments">Your comment:</label>
           </div>
           <div>
-            <textarea id="comments"></textarea>
+            <textarea class="formElement" id="comments"></textarea>
           </div>
           <div>
             <label>Would you visit us again?</label>
           </div>
           <div>
             <label for="positive">Yes: </label>
-            <input type="radio" id="positive" value="y" name="visit" />
+            <input
+              type="radio"
+              class="formElement"
+              id="positive"
+              value="y"
+              name="visit"
+            />
           </div>
           <div>
             <label for="negative">No:</label>
-            <input type="radio" id="negative" value="n" name="visit" />
+            <input
+              type="radio"
+              class="formElement"
+              id="negative"
+              value="n"
+              name="visit"
+            />
           </div>
           <div>
-            <button type="submit">Submit</button>
+            <button type="submit" class="clickable" id="subButton">
+              Submit
+            </button>
+
+            <button type="reset" class="clickable" id="resButton">Reset</button>
           </div>
         </fieldset>
       </form>
